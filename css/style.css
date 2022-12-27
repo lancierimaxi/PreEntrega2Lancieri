@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@300;400&display=swap');
+
+/* reset */
+*{
+    font-family: 'Open Sans', sans-serif; /*familia tipográfica*/
+    margin: 0;
+    padding: 0;
+}
+
+/* font size 62.5% */
+/* rem --- 16px aprox */
+html{
+    font-size: 62.5%;
+    /* con este cambio un rem  */
+}
+
+
+
+/* selectores de etiqueta */
+body{
+    background-image: url(../img/patron-fondo.webp);/*imagen de fondo*/
+    background-repeat: repeat; /*fondo repite en el eje X & Y*/
+    background-attachment:  fixed; /*fondo fijo*/
+}
+
+p{
+    color: rgb(0, 0, 0); /*color de texto*/
+    font-family: 'Open Sans', sans-serif; /*familia tipográfica*/
+    font-size: 2rem;/*tamaño del texto*/
+}
+
+/* selectores descendentes */
+nav{
+    background: linear-gradient(#f3ffff,#dedfdf) 
+    
+}
+
+nav{
+    padding: 6px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.header_img--fluid{
+    width: 100%
+}
+
+/* selector de grupo */
+h1,
+h2{
+    color: rgb(0, 0, 0);/*color de texto*/
+    font-size: 4rem;/*tamaño del texto*/
+    font-family: 'Nunito', sans-serif;/*familia tipográfica*/
+}
+
+.d-flex{
+    display: flex;
+}
+   
+.justify-content-space{
+    justify-content: space-between ;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.font-size{
+    font-size: 2rem;
+}
+
+.fontSize{
+    font-size: 15px;
+}
+
+.bg-light{
+    background-color: rgba(236, 97, 97, 0.432);
+}
+
+.srclogo{
+    width: 100px;
+}
+
+.img-serv{
+    width: 300px;
+}
+
+.container{
+    background-color: rgba(209, 207, 207, 0.432) ;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#botonera ul li a{
+    color:black;
+    font-size: 1.2em;
+    background-image: linear-gradient;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+#botonera ul li a:hover{
+    color: black;
+    font-weight: 600;
+    background-size: 100% 2px;
+}
+
+.spanF{
+    font-size: 20px;
+}
+
+.secondNav ul{
+    display: block;
+    font-size: 10px;
+}
+
+.secondNav img{
+    width: 80%;
+}
+
+.secondNav span{
+    margin: 10px 0;
+    display: block;
+    color: rgb(39, 34, 37);
+}
+
+.secondNav a{
+    color: #141313;
+    text-decoration: none;
+}
+
+.secondNav a:hover{
+    font-weight: 600;
+}
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+    "filtros productos";
+}
+
+.contenedorServ{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+    "mantenimiento actualizacion so";
+}
+
+#mantenimiento{
+    grid-area: mantenimiento;
+}
+
+#actualizacion{
+    grid-area: actualizacion;
+}
+
+#so{
+    grid-area: so;
+}
+
+#mainNav{
+    grid-area: nav;
+}
+
+#filtros{
+    grid-area: filtros;
+}
+
+#productos{
+    grid-area: productos;
+}
+
+#header{
+    grid-area: header;
+}
+
+
+
