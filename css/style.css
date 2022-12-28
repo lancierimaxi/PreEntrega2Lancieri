@@ -36,7 +36,7 @@ nav{
 }
 
 nav{
-    padding: 6px 30px;
+    padding: 6px 1.875em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 10px;
+    margin-right: 0.625em;
 }
 
 nav ul li a {
@@ -65,7 +65,7 @@ nav ul li a {
 h1,
 h2{
     color: rgb(0, 0, 0);/*color de texto*/
-    font-size: 4rem;/*tamaño del texto*/
+    font-size: 4em;/*tamaño del texto*/
     font-family: 'Nunito', sans-serif;/*familia tipográfica*/
 }
 
@@ -90,7 +90,7 @@ h2{
 }
 
 .fontSize{
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .bg-light{
@@ -98,11 +98,11 @@ h2{
 }
 
 .srclogo{
-    width: 100px;
+    width: 6.25em;
 }
 
 .img-serv{
-    width: 300px;
+    width: 18.75em;
 }
 
 .container{
@@ -129,12 +129,12 @@ h2{
 }
 
 .spanF{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .secondNav ul{
     display: block;
-    font-size: 10px;
+    font-size: 0.625em;
 }
 
 .secondNav img{
@@ -142,7 +142,7 @@ h2{
 }
 
 .secondNav span{
-    margin: 10px 0;
+    margin: 0.625em 0;
     display: block;
     color: rgb(39, 34, 37);
 }
@@ -173,31 +173,31 @@ h2{
     "mantenimiento actualizacion so";
 }
 
-#mantenimiento{
+#mantenimiento1{
     grid-area: mantenimiento;
 }
 
-#actualizacion{
+#actualizacion1{
     grid-area: actualizacion;
 }
 
-#so{
+#so1{
     grid-area: so;
 }
 
-#mainNav{
+#mainNav1{
     grid-area: nav;
 }
 
-#filtros{
+#filtros1{
     grid-area: filtros;
 }
 
-#productos{
+#productos1{
     grid-area: productos;
 }
 
-#header{
+#header1{
     grid-area: header;
 }
 
