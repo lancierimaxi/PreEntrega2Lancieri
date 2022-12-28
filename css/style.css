@@ -156,12 +156,17 @@ h2{
     font-weight: 600;
 }
 
+.secondNav {
+    font-size: 2em;
+}
+
 
 .contenedor{
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
     grid-template-areas:
+    "header header"
     "filtros productos";
 }
 
@@ -173,33 +178,185 @@ h2{
     "mantenimiento actualizacion so";
 }
 
-#mantenimiento1{
+#mantenimiento{
     grid-area: mantenimiento;
 }
 
-#actualizacion1{
+#actualizacion{
     grid-area: actualizacion;
 }
 
-#so1{
+#so{
     grid-area: so;
 }
 
-#mainNav1{
+#mainNav{
     grid-area: nav;
 }
 
-#filtros1{
+#filtros{
     grid-area: filtros;
 }
 
-#productos1{
+#productos{
     grid-area: productos;
 }
 
-#header1{
+#header{
     grid-area: header;
 }
 
+@media (min-width: 300px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas:
+        "header"
+        "filtros"
+        "productos";
+    }
+    h1,
+    h2{
+    color: rgb(0, 0, 0);/*color de texto*/
+    font-size: 2em;/*tamaño del texto*/
+    font-family: 'Nunito', sans-serif;/*familia tipográfica*/
+    }
+    p{
+        color: rgb(0, 0, 0); /*color de texto*/
+        font-family: 'Open Sans', sans-serif; /*familia tipográfica*/
+        font-size: 3rem;/*tamaño del texto*/
+    }
+
+    #botonera ul li a{
+        color:black;
+        font-size: 2em;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+}
 
 
+@media (min-width: 768px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+    h1,
+    h2{
+    color: rgb(0, 0, 0);/*color de texto*/
+    font-size: 4em;/*tamaño del texto*/
+    font-family: 'Nunito', sans-serif;/*familia tipográfica*/
+    }
+
+    #botonera ul li a{
+        color:black;
+        font-size: 2em;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+    h1,
+    h2{
+    color: rgb(0, 0, 0);/*color de texto*/
+    font-size: 4em;/*tamaño del texto*/
+    font-family: 'Nunito', sans-serif;/*familia tipográfica*/
+    }
+
+    #botonera ul li a{
+        color:black;
+        font-size: 2em;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+    h1,
+    h2{
+    color: rgb(0, 0, 0);/*color de texto*/
+    font-size: 3em;/*tamaño del texto*/
+    font-family: 'Nunito', sans-serif;/*familia tipográfica*/
+    }
+
+    #botonera ul li a{
+        color:black;
+        font-size: 1.5em;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    .secondNav {
+        font-size: 1em;
+    }
+    
+    p{
+        color: rgb(0, 0, 0); /*color de texto*/
+        font-family: 'Open Sans', sans-serif; /*familia tipográfica*/
+        font-size: 2rem;/*tamaño del texto*/
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+    h1,
+    h2{
+    color: rgb(0, 0, 0);/*color de texto*/
+    font-size: 2em;/*tamaño del texto*/
+    font-family: 'Nunito', sans-serif;/*familia tipográfica*/
+    }
+    #botonera ul li a{
+        color:black;
+        font-size: 1em;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+}
