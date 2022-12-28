@@ -173,20 +173,24 @@ h2{
 .contenedorServ{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
     grid-template-areas:
+    "header header header"
     "mantenimiento actualizacion so";
 }
 
 #mantenimiento{
+    align-items: center;
     grid-area: mantenimiento;
 }
 
 #actualizacion{
+    align-items: center;
     grid-area: actualizacion;
 }
 
 #so{
+    align-items: center;
     grid-area: so;
 }
 
@@ -236,6 +240,16 @@ h2{
         background-repeat: no-repeat;
         background-size: 0% 2px;
         transition: background-size .3s;
+    }
+    .contenedorServ{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas:
+        "header"
+        "mantenimiento"
+        "actualizacion" 
+        "so";
     }
 }
 
@@ -294,6 +308,7 @@ h2{
         background-size: 0% 2px;
         transition: background-size .3s;
     }
+    
 
 }
 
@@ -330,6 +345,15 @@ h2{
         color: rgb(0, 0, 0); /*color de texto*/
         font-family: 'Open Sans', sans-serif; /*familia tipográfica*/
         font-size: 2rem;/*tamaño del texto*/
+    }
+
+    .contenedorServ{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header header header"
+        "mantenimiento actualizacion so";
     }
 
 }
