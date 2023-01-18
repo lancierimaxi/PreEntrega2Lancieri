@@ -1,0 +1,231 @@
+html{
+    font-size: 62.5%;
+}
+
+.srclogo{
+    width: 6.25em;
+}
+
+body {
+    background-image: url(../img/patron-fondo.webp);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+p{
+    color: $mainColor;
+    font-family: $fontFamily;
+    font-size: $fontMd;
+}
+
+h1{
+    color: $mainColor;
+    font-size: $fontXL;
+    font-size: $fontFamilyII;
+}
+
+h2{
+    color: $mainColor;
+    font-size: $fontLg;
+    font-family: $fontFamilyII;
+}
+
+@media (min-width: 300px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas:
+        "header"
+        "filtros"
+        "productos";
+    }
+
+    h1,
+    h2{
+    color: $mainColor;
+    font-size: $fontMd;
+    font-family: $fontFamilyII;
+    }
+
+    p{
+        color: $mainColor; 
+        font-family: $fontFamily; 
+        font-size: 3rem;
+    }
+
+    #botonera ul li a{
+        color:  $mainColor;
+        font-size: $fontSm;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+    .contenedorServ{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas:
+        "header"
+        "mantenimiento"
+        "actualizacion" 
+        "so";
+    }
+}
+
+
+@media (min-width: 768px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+
+    h1,
+    h2{
+    color: $mainColor;
+    font-size: $fontMd;
+    font-family: $fontFamilyII
+    }
+
+    p{
+        color: $mainColor; 
+        font-family: $fontFamily; 
+        font-size: $fontMd;
+    }
+    
+    #botonera ul li a{
+        color: $mainColor;
+        font-size: $fontMd;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+    h1,
+    h2{
+    color: $mainColor;
+    font-size: $fontMd;
+    font-family: $fontFamilyII;
+    }
+
+    p{
+        color: $mainColor; 
+        font-family: $fontFamily; 
+        font-size: 3rem;
+    }
+
+    #botonera ul li a{
+        color: $mainColor;
+        font-size: $fontSm;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    
+
+}
+
+@media (min-width: 1200px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+
+    h1,
+    h2{
+    color: $mainColor;
+    font-size: $fontMd;
+    font-family: $fontFamilyII
+    }
+
+    p{
+        color: $mainColor; 
+        font-family: $fontFamily; 
+        font-size: $fontMd;
+    }
+
+    #botonera ul li a{
+        color: $mainColor;
+        font-size: $fontSm;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    .secondNav {
+        font-size: $fontSm;
+    }
+
+    .contenedorServ{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header header header"
+        "mantenimiento actualizacion so";
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "header"
+        "filtros productos";
+    }
+
+    h1,
+    h2{
+    color: $mainColor;
+    font-size: $fontSm;
+    font-family: $fontFamilyII
+    }
+
+    p{
+        color: $mainColor; 
+        font-family: $fontFamily; 
+        font-size: $fontMd;
+    }
+
+    #botonera ul li a{
+        color: $mainColor;
+        font-size: $fontSm;
+        background-image: linear-gradient;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+}

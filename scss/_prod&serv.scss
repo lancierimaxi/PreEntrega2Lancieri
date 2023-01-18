@@ -1,0 +1,48 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    "header header"
+    "filtros productos";
+}
+
+.contenedorServ{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    "header header header"
+    "mantenimiento actualizacion so";
+}
+
+#mantenimiento{
+    align-items: center;
+    grid-area: mantenimiento;
+}
+
+#actualizacion{
+    align-items: center;
+    grid-area: actualizacion;
+}
+
+#so{
+    align-items: center;
+    grid-area: so;
+}
+
+#mainNav{
+    grid-area: nav;
+}
+
+#filtros{
+    grid-area: filtros;
+}
+
+#productos{
+    grid-area: productos;
+}
+
+#header{
+    grid-area: header;
+}

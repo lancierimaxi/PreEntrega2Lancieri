@@ -1,3 +1,270 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@300;400&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+.srclogo {
+  width: 6.25em;
+}
+
+body {
+  background-image: url(../img/patron-fondo.webp);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+p {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+}
+
+h1 {
+  color: black;
+  font-size: 4em;
+  font-size: "Roboto", sans-serif;
+}
+
+h2 {
+  color: black;
+  font-size: 3em;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 300px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header" "filtros" "productos";
+  }
+  h1,
+  h2 {
+    color: black;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+  }
+  p {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+  }
+  #botonera ul li a {
+    color: black;
+    font-size: 1em;
+    background-image: linear-gradient;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+  }
+  .contenedorServ {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header" "mantenimiento" "actualizacion" "so";
+  }
+}
+@media (min-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header" "filtros productos";
+  }
+  h1,
+  h2 {
+    color: black;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+  }
+  p {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+  }
+  #botonera ul li a {
+    color: black;
+    font-size: 2em;
+    background-image: linear-gradient;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+  }
+}
+@media (min-width: 992px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header" "filtros productos";
+  }
+  h1,
+  h2 {
+    color: black;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+  }
+  p {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+  }
+  #botonera ul li a {
+    color: black;
+    font-size: 1em;
+    background-image: linear-gradient;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header" "filtros productos";
+  }
+  h1,
+  h2 {
+    color: black;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+  }
+  p {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+  }
+  #botonera ul li a {
+    color: black;
+    font-size: 1em;
+    background-image: linear-gradient;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+  }
+  .secondNav {
+    font-size: 1em;
+  }
+  .contenedorServ {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header header header" "mantenimiento actualizacion so";
+  }
+}
+@media (min-width: 1400px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header" "filtros productos";
+  }
+  h1,
+  h2 {
+    color: black;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+  }
+  p {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+  }
+  #botonera ul li a {
+    color: black;
+    font-size: 1em;
+    background-image: linear-gradient;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+  }
+}
+nav {
+  background: linear-gradient(#f3ffff, #dedfdf);
+  padding: 6px 1.875em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 0, 625em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+.spanF {
+  font-size: 2em;
+}
+
+#botonera {
+  display: flex;
+  justify-content: space-between;
+}
+#botonera ul {
+  list-style: none;
+}
+#botonera ul li {
+  margin-right: 10px;
+  font-size: 2em;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "header header" "filtros productos";
+}
+
+.contenedorServ {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "header header header" "mantenimiento actualizacion so";
+}
+
+#mantenimiento {
+  align-items: center;
+  grid-area: mantenimiento;
+}
+
+#actualizacion {
+  align-items: center;
+  grid-area: actualizacion;
+}
+
+#so {
+  align-items: center;
+  grid-area: so;
+}
+
+#mainNav {
+  grid-area: nav;
+}
+
+#filtros {
+  grid-area: filtros;
+}
+
+#productos {
+  grid-area: productos;
+}
+
+#header {
+  grid-area: header;
+}
 
 /*# sourceMappingURL=main.css.map */

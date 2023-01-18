@@ -1,0 +1,37 @@
+//nesting
+nav{
+    background: linear-gradient(#f3ffff,#dedfdf);
+    padding: 6px 1.875em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin-right: 0,625em;
+            a{
+                text-decoration: none;
+                color: $mainColor;
+                font-size: $fontMd;
+            }
+        }
+    }
+}
+
+.spanF{
+    font-size: 2em;
+}
+
+
+#botonera{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        list-style: none;
+        li{
+            margin-right: 10px;
+            font-size: $fontMd;
+        }
+    }
+}
