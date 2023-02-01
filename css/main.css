@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Righteous&family=Roboto:ital,wght@1,300&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -7,28 +7,144 @@ html {
   width: 6.25em;
 }
 
+.srcfooter {
+  width: 4em;
+}
+
+.divfot {
+  justify-content: space-between;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.aling {
+  text-align: justify;
+}
+
+#img {
+  border-radius: 10%;
+  width: 500px;
+  height: 225px;
+  margin: 20px;
+  float: right;
+}
+
 body {
   background-image: url(../img/patron-fondo.webp);
   background-repeat: repeat;
   background-attachment: fixed;
+  position: relative;
+  padding-bottom: 10em;
+  min-height: 100vh;
 }
 
 p {
   color: black;
   font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.p {
+  color: black;
+  font-family: "Righteous", cursive;
   font-size: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 h1 {
   color: black;
   font-size: 4em;
-  font-size: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.h1 {
+  font-family: "Righteous", cursive;
+  font-size: 5em;
+  color: white;
+  background-color: red;
 }
 
 h2 {
   color: black;
   font-size: 3em;
   font-family: "Roboto", sans-serif;
+  padding: 1em;
+}
+
+.h2 {
+  color: black;
+  font-size: 3em;
+  font-family: "Righteous", cursive;
+}
+
+h3 {
+  color: rgb(36, 35, 35);
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+#error404 h1 {
+  text-align: center;
+  font-size: 60px;
+  padding: 50px;
+  font-family: "Righteous", cursive;
+}
+#error404 h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+}
+#error404 p {
+  font-family: "Righteous", cursive;
+  text-align: center;
+}
+#error404 p button {
+  border: none;
+  background: none;
+  align-items: center;
+  padding: 10px;
+  color: black;
+}
+#error404 p button a {
+  color: red;
+}
+#error404 img {
+  float: right;
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+.footer {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 6px 1.875em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer p {
+  font-family: "Righteous", cursive;
+  color: white;
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+}
+.footer ul li {
+  margin-right: 0, 625em;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 @media (min-width: 300px) {
@@ -72,6 +188,12 @@ h2 {
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "header" "filtros productos";
   }
+  .contenedorServ {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header" "mantenimiento" "actualizacion" "so";
+  }
   h1,
   h2 {
     color: black;
@@ -93,12 +215,18 @@ h2 {
     transition: background-size 0.3s;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .contenedor {
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "header" "filtros productos";
+  }
+  .contenedorServ {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header" "mantenimiento" "actualizacion" "so";
   }
   h1,
   h2 {
@@ -120,8 +248,42 @@ h2 {
     background-size: 0% 2px;
     transition: background-size 0.3s;
   }
+  #error404 h1 {
+    text-align: center;
+    font-size: 60px;
+    padding: 50px;
+    font-family: "Righteous", cursive;
+  }
+  #error404 h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Righteous", cursive;
+  }
+  #error404 p {
+    font-family: "Righteous", cursive;
+    text-align: center;
+  }
+  #error404 p button {
+    border: none;
+    background: none;
+    align-items: center;
+    padding: 10px;
+    color: black;
+  }
+  #error404 p button a {
+    color: red;
+  }
+  #error404 img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    padding: 30px;
+    float: none;
+    justify-content: center;
+    align-items: center;
+  }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1270px) {
   .contenedor {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -155,7 +317,15 @@ h2 {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "header header header" "mantenimiento actualizacion so";
+    grid-template-areas: "header header header" "mantenimiento so actualizacion";
+  }
+  #img {
+    border-radius: 10%;
+    width: 90%;
+    height: 300px;
+    margin: 20px;
+    float: none;
+    align-items: center;
   }
 }
 @media (min-width: 1400px) {
@@ -219,7 +389,7 @@ nav ul li a {
 }
 #botonera ul li {
   margin-right: 10px;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .contenedor {
@@ -233,7 +403,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "header header header" "mantenimiento actualizacion so";
+  grid-template-areas: "header header header" "mantenimiento so actualizacion";
 }
 
 #mantenimiento {
@@ -265,6 +435,11 @@ nav ul li a {
 
 #header {
   grid-area: header;
+}
+
+.btncenter {
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -65,14 +65,70 @@
     <!-- cierra header -->
     <!-- inicia main -->
     <main>
-        <h1 class="text-center">BIENVENIDOS A FURY TECH</h1>
-        <p class="bg-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem sequi deserunt perspiciatis necessitatibus, ducimus, tenetur voluptatum sunt id officia explicabo expedita saepe exercitationem accusamus consectetur fuga consequatur odit qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem sequi deserunt perspiciatis necessitatibus, ducimus, tenetur voluptatum sunt id officia explicabo expedita saepe exercitationem accusamus consectetur fuga consequatur odit qui</p>
+      <div>
+        <h1 class="text-center h1">BIENVENIDOS A FURY TECH</h1>
+      </div>
+      <h2 class="text-center h2">Productos</h2>  
+      <div id="carouselExampleDark" class="carousel slide carousel-multi-item carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./img/carrusel/banner 1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./img/carrusel/banner 2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carrusel/banner 3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div>
+      <h2 class="text-center p h2">Servicios informaticos</h2>
+      <p class="text-center p">
+        <img id="img" src="./img/carrusel/servicios.webp" alt="">
+        Desde Fury Tech contamos con la capacitacion necesaria para mantener el estado de sus equipos, realizamos una serie de tareas que garantizan su correcto funcionamiento. No solo nos concentramos en la reparacion de la computadora cuando sucede el problema sino en prevenir los problemas antes que sucedan, para esto realizamos visitas mensuales, quincenales, semanales o diarias.
+      </p>
+      </div>
     </main>
     <!-- cierra main -->
-    <footer>
+    <footer class="footer">
+      <p>Seguinos en nuestras redes sociales</p>
+      <ul>
+        <li>
         <a href="https://www.instagram.com/furytech00" target="blank">
-            <img src="img/icon/instagram.png" alt="Seguinos en instagram">
+            <img class="srcfooter" src="img/icon/instagram.png" alt="Seguinos en instagram">
         </a>
+        </li>
+         <li>
+          <a href="https://es-la.facebook.com/" target="_blank">
+          <img class="srcfooter" src="./img/icon/facebook.png" alt="Seguinos en Facebook">
+        </a>
+      </li>
+      <li>
+        <a href="https://web.whatsapp.com/" target="_blank">
+          <img class="srcfooter" src="img/icon/wpp.png" alt="Contactanos en WhatsApp">
+        </a>
+      </li>
+      </ul>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

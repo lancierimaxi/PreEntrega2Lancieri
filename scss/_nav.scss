@@ -20,7 +20,7 @@ nav{
 }
 
 .spanF{
-    font-size: 2em;
+    font-size: $fontMd;
 }
 
 
@@ -31,7 +31,7 @@ nav{
         list-style: none;
         li{
             margin-right: 10px;
-            font-size: $fontMd;
+            font-size: $fontSm;
         }
     }
 }

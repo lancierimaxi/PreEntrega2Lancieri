@@ -13,7 +13,7 @@
     grid-template-rows: repeat(2,auto);
     grid-template-areas:
     "header header header"
-    "mantenimiento actualizacion so";
+    "mantenimiento so actualizacion";
 }
 
 #mantenimiento{
@@ -45,4 +45,9 @@
 
 #header{
     grid-area: header;
+}
+
+.btncenter{
+    align-items: center;
+    justify-content: center;
 }
