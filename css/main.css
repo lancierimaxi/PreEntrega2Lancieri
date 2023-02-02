@@ -118,6 +118,30 @@ h3 {
   margin: 20px;
 }
 
+.contacto {
+  font-family: "Righteous", cursive;
+  font-size: 1.4em;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  position: relative;
+}
+.contacto h1 {
+  font-family: "Righteous", cursive;
+  color: red;
+}
+.contacto h1 span {
+  color: white;
+}
+.contacto label {
+  color: white;
+}
+
 .footer {
   background-color: red;
   position: absolute;
@@ -174,12 +198,6 @@ h3 {
     background-size: 0% 2px;
     transition: background-size 0.3s;
   }
-  .contenedorServ {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header" "mantenimiento" "actualizacion" "so";
-  }
 }
 @media (min-width: 768px) {
   .contenedor {
@@ -187,12 +205,6 @@ h3 {
     grid-template-columns: 25% 75%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "header" "filtros productos";
-  }
-  .contenedorServ {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header" "mantenimiento" "actualizacion" "so";
   }
   h1,
   h2 {
@@ -221,12 +233,6 @@ h3 {
     grid-template-columns: 25% 75%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "header" "filtros productos";
-  }
-  .contenedorServ {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header" "mantenimiento" "actualizacion" "so";
   }
   h1,
   h2 {
@@ -312,12 +318,6 @@ h3 {
   }
   .secondNav {
     font-size: 1em;
-  }
-  .contenedorServ {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "header header header" "mantenimiento so actualizacion";
   }
   #img {
     border-radius: 10%;
